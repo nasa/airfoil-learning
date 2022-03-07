@@ -21,18 +21,22 @@ Useful documentation on torch data object
 * [Datasets](https://pytorch-geometric.readthedocs.io/en/latest/notes/create_dataset.html#creating-larger-datasets)
 
 
-# Wiki links
+## Wiki links
 [Getting Started with your Environment](https://gitlab.grc.nasa.gov/machine-learning/graph-networks/airfoil-learning/-/wikis/1.0-Getting-Started)
 
+## Link to Dataset
+Dataset can be found at https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/airfoil-learning-dataset.zip 
+
+## Reporting Bugs 
+To report bugs, add a github issue. Instructions for adding github issues: https://www.youtube.com/watch?v=TKJ4RdhyB5Y
+
 # Repository Walk through
+Below are links to two interactive walk throughs detailing how to reproduce the results of this work. 
 1. Generating Airfoil Designs [Generate Xfoil](https://github.com/nasa/airfoil-learning/tree/main/generate_xfoil)
 2. Training Graph Netwworks and MultiLayer Perception (MLP) [pytorch](https://github.com/nasa/airfoil-learning/tree/main/pytorch)
 
-# Link to Dataset
-Dataset can be found at https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/airfoil-learning-dataset.zip 
-
-# Reporting Bugs 
-To report bugs, add a github issue. Instructions for adding github issues: https://www.youtube.com/watch?v=TKJ4RdhyB5Y
+# Technical Reports
+A link to the publication will be included here once it's been published. 
 
 # License
 [NASA Open Source Agreement](https://opensource.org/licenses/NASA-1.3)
