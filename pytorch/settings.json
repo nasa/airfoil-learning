@@ -1,0 +1,287 @@
+{    
+    "data":[
+        {
+            "type":"graph",
+            "train_filename": "../generate_xfoil/datasets/minmax/graph_scaled_data_cp_train.pt",
+            "test_filename": "../generate_xfoil/datasets/minmax/graph_scaled_data_cp_test.pt",
+            "percent_dataset": 0.2,
+            "percent_train": 0.8,        
+            "scaler_type":"minmax"
+        },
+        {
+            "type":"graph",
+            "train_filename": "../generate_xfoil/datasets/standard/graph_scaled_data_cp_train.pt",
+            "test_filename": "../generate_xfoil/datasets/standard/graph_scaled_data_cp_test.pt",
+            "percent_dataset": 0.2,
+            "percent_train": 0.8,
+            "scaler_type":"standard"
+        },
+        {
+            "type":"dnn",
+            "train_filename": "../generate_xfoil/datasets/minmax/dnn_scaled_data_cp_train.pt",
+            "test_filename": "../generate_xfoil/datasets/minmax/dnn_scaled_data_cp_test.pt",
+            "percent_dataset": 0.2,
+            "percent_train": 0.8,
+            "scaler_type":"minmax"
+        },
+        {
+            "type":"dnn",
+            "train_filename": "../generate_xfoil/datasets/minmax/dnn_scaled_data_cp_train.pt",
+            "test_filename": "../generate_xfoil/datasets/minmax/dnn_scaled_data_cp_train.pt",
+            "percent_dataset": 0.2,
+            "percent_train": 0.8,
+            "scaler_type":"standard"
+        }
+    ],
+    "networks":[
+            {
+                "type":"gnn",
+                "scaler_type":"minmax",
+                "train":{
+                    "GnnLayers": [3,16,32,64],
+                    "hiddenLayers": null,
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 20,
+                    "batch_size":64,
+                    "num_workers":0,
+                    "validation_epoch":10,
+                    "output_dir":"checkpoints_gnn_cp/minmax",
+                    "predict_cp":true
+                }
+            },
+            {
+                "type":"gnn",
+                "scaler_type":"standard",
+                "train":{
+                    "GnnLayers": [3,16,32,64],
+                    "hiddenLayers": null,
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 20,
+                    "batch_size":64,
+                    "num_workers":0,
+                    "validation_epoch":10,
+                    "output_dir":"checkpoints_gnn_cp/standard",
+                    "predict_cp":true
+                }
+            },
+            {
+                "type":"gnn",
+                "scaler_type":"minmax",
+                "train":{
+                    "GnnLayers": [3,16,32,64],
+                    "hiddenLayers": [64,64,64,64],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 20,
+                    "batch_size":64,
+                    "num_workers":0,
+                    "validation_epoch":10,
+                    "output_dir":"checkpoints_gnn_cp/minmax",
+                    "predict_cp":true
+                }
+            },
+            {
+                "type":"gnn",
+                "scaler_type":"standard",
+                "train":{
+                    "GnnLayers": [3,16,32,64],
+                    "hiddenLayers": [64,64,64,64],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 20,
+                    "batch_size":64,
+                    "num_workers":0,
+                    "validation_epoch":10,
+                    "output_dir":"checkpoints_gnn_cp/standard",
+                    "predict_cp":true
+                }
+            },
+            {
+                "type":"gnn",
+                "scaler_type":"minmax",
+                "train":{
+                    "GnnLayers": [3,16,32,64],
+                    "hiddenLayers": null,
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 20,
+                    "batch_size":64,
+                    "num_workers":0,
+                    "validation_epoch":10,
+                    "output_dir":"checkpoints_gnn_no_cp/minmax",
+                    "predict_cp":false
+                }
+            },
+            {
+                "type":"gnn",
+                "scaler_type":"standard",
+                "train":{
+                    "GnnLayers": [3,16,32,64],
+                    "hiddenLayers": null,
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 20,
+                    "batch_size":64,
+                    "num_workers":0,
+                    "validation_epoch":10,
+                    "output_dir":"checkpoints_gnn_no_cp/standard",
+                    "predict_cp":false
+                }
+            },
+            {
+                "type":"gnn",
+                "scaler_type":"minmax",
+                "train":{
+                    "GnnLayers": [3,16,32,64],
+                    "hiddenLayers": [64,64,64,64],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 20,
+                    "batch_size":64,
+                    "num_workers":0,
+                    "validation_epoch":10,
+                    "output_dir":"checkpoints_gnn_no_cp/minmax",
+                    "predict_cp":false
+                }
+            },
+            {
+                "type":"gnn",
+                "scaler_type":"standard",
+                "train":{
+                    "GnnLayers": [3,16,32,64],
+                    "hiddenLayers": [64,64,64,64],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 20,
+                    "batch_size":64,
+                    "num_workers":0,
+                    "validation_epoch":10,
+                    "output_dir":"checkpoints_gnn_no_cp/standard",
+                    "predict_cp":false
+                }
+            },
+
+            {
+                "type":"dnn",
+                "scaler_type":"minmax",
+                "train":{
+                    "Layers": [64,64,64,64],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 100,
+                    "batch_size":32,
+                    "num_workers":0,
+                    "validation_epoch":5,
+                    "output_dir":"checkpoints_dnn_no_cp/minmax",
+                    "predict_cp":false
+                }
+            },
+            {
+                "type":"dnn",
+                "scaler_type":"standard",
+                "train":{
+                    "Layers": [64,64,64,64],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 100,
+                    "batch_size":32,
+                    "num_workers":0,
+                    "validation_epoch":5,
+                    "output_dir":"checkpoints_dnn_no_cp/standard",
+                    "predict_cp":false
+                }
+            },
+            {
+                "type":"dnn",
+                "scaler_type":"minmax",
+                "train":{
+                    "Layers": [128,128,128,128],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 100,
+                    "batch_size":32,
+                    "num_workers":0,
+                    "validation_epoch":5,
+                    "output_dir":"checkpoints_dnn_no_cp/minmax",
+                    "predict_cp":false
+                }
+            },
+            {
+                "type":"dnn",
+                "scaler_type":"standard",
+                "train":{
+                    "Layers": [128,128,128,128],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 100,
+                    "batch_size":32,
+                    "num_workers":0,
+                    "validation_epoch":5,
+                    "output_dir":"checkpoints_dnn_no_cp/standard",
+                    "predict_cp":false
+                }
+            },
+            {
+                "type":"dnn",
+                "scaler_type":"minmax",
+                "train":{
+                    "Layers": [64,64,64,64],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 100,
+                    "batch_size":32,
+                    "num_workers":0,
+                    "validation_epoch":5,
+                    "output_dir":"checkpoints_dnn_cp/minmax",
+                    "predict_cp":true
+                }
+            },
+            {
+                "type":"dnn",
+                "scaler_type":"standard",
+                "train":{
+                    "Layers": [64,64,64,64],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 100,
+                    "batch_size":32,
+                    "num_workers":0,
+                    "validation_epoch":5,
+                    "output_dir":"checkpoints_dnn_cp/standard",
+                    "predict_cp":true
+                }
+            },
+            {
+                "type":"dnn",
+                "scaler_type":"minmax",
+                "train":{
+                    "Layers": [128,128,128,128],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 100,
+                    "batch_size":32,
+                    "num_workers":0,
+                    "validation_epoch":5,
+                    "output_dir":"checkpoints_dnn_cp/minmax",
+                    "predict_cp":true
+                }
+            },
+            {
+                "type":"dnn",
+                "scaler_type":"standard",
+                "train":{
+                    "Layers": [128,128,128,128],
+                    "learning_rate": 1E-2,
+                    "weighted_decay":1e-1,
+                    "epochs": 100,
+                    "batch_size":32,
+                    "num_workers":0,
+                    "validation_epoch":2,
+                    "output_dir":"checkpoints_dnn_cp/standard",
+                    "predict_cp":true
+                }
+            }            
+        ]
+}
