@@ -64,12 +64,8 @@ Graph Nerual networks training without predicting Cp had a higher loss than Deep
 Graph Neural Networks was not able to predict the Cl, Cd, Cdp, and Cm as well as the Cp at each point. Reducing the number of output parameters may help with predicting the Cp. 
 ![Loss_History_gnn_no_Cp](./Loss_History_gnn_Cp.png)
 
-## Example of predicting performance of random airfoils
-
-To generate plots of random airfoils stored in `../generate_xfoil/json` run `python plot_random_airfoil_results.py` You may need to edit this file so that it reads the correct checkpoint folders. 
-
-![fx83](./predicted_results/fx83w227-il%20-%20FX%2083-W-227.png)
-![fx83_data](./predicted_results/fx83w227-il%20-%20FX%2083-W-227-Re_50000.0-Ncrit_5.0.png)
+## Examples
+1. Code to download preprocessed airfoil dataset 
 
 
 Another design
