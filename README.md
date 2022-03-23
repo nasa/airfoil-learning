@@ -26,7 +26,7 @@ Useful documentation on torch data object
 
 ### Link to Dataset
 **Unprocessed dataset** can be found at https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/airfoil-learning-dataset.zip 
-This dataset is not normalized and contains the geometry of each airfoil and the xfoil results. It's important to go through the process of normalizing the design. This will give you the scalars used for the processed dataset. See tutorial (Normalization section). 
+This dataset is not normalized and contains the geometry of each airfoil and the xfoil results. It's important to go through the process of normalizing the design. This will give you the scalars (scalers.pickle) used with the processed dataset. See tutorial (Normalization section). 
 
 > Important note: Training can give you really low values for error and loss but all of that doesn't mean much until you do a santity check with a random design. You may find low error but a mistake in your normalization/unnormalization code will give you strange results and most definitely affects the training. Always do a santiy check and plot what it is you are interested in. 
 
@@ -36,6 +36,25 @@ This dataset is not normalized and contains the geometry of each airfoil and the
 
 ## Google Colab Tutorial
 [Link to tutorial]()
+
+### Regarding use of Jupyter Notebooks
+
+Jupyter notebook is great from demonstrations, homework, interview questions, but it should never be used for real development work. I have witnessed interns who do development work in Jupyter because they do not know how to debug python with vscode, pycharm, or any editor. Their notebooks are massive 1000+ lines of code and output. They broke something in cell 20, ended up fixing it in cell 50 and when they run through the code from start to finish it's broken from cell 21 to 49. Weeks go by and still they couldn't figure it out. End of internship and the notebook is still broken. Notebooks are never mean for code development, only for show and tell. 
+
+For python development, I reccomend the following:
+- Visual studio code
+    - Extensions:
+        - autodocstring
+        - better comments
+        - docker
+        - python
+        - pylance
+        - remote ssh 
+        - restructuredtext
+        - syntax highlighting 
+- anaconda (learn how to make virtual environments) 
+- Learn best practices of debugging python with visual studio code from youtube.
+
 
 ## Reporting Bugs 
 To report bugs, add a github issue. Instructions for adding github issues: https://www.youtube.com/watch?v=TKJ4RdhyB5Y
