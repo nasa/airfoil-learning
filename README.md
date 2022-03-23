@@ -28,7 +28,7 @@ Useful documentation on torch data object
 **Unprocessed dataset** can be found at https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/airfoil-learning-dataset.zip 
 This dataset is not normalized and contains the geometry of each airfoil and the xfoil results. It's important to go through the process of normalizing the design. This will give you the scalars used for the processed dataset. See tutorial (Normalization section). 
 
-> Important note: Training can give you really low values for error and loss but all of that doesn't mean much until you do a santity check with a random design. You may find low error but a mistake in your normalization/unnormalization code that gives you strange results. Always do a santiy check and plot what it is you are interested in. 
+> Important note: Training can give you really low values for error and loss but all of that doesn't mean much until you do a santity check with a random design. You may find low error but a mistake in your normalization/unnormalization code will give you strange results and most definitely affects the training. Always do a santiy check and plot what it is you are interested in. 
 
 **Processed and normalized dataset**:  https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/dataset-processed.zip
 
