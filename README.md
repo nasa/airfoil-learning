@@ -24,19 +24,31 @@ Useful documentation on torch data object
 ## Wiki links
 [Getting Started with your Environment](https://gitlab.grc.nasa.gov/machine-learning/graph-networks/airfoil-learning/-/wikis/1.0-Getting-Started)
 
-## Link to Dataset
-Dataset can be found at https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/airfoil-learning-dataset.zip 
+### Link to Dataset
+**Unprocessed dataset** can be found at https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/airfoil-learning-dataset.zip 
+This dataset is not normalized and contains the geometry of each airfoil and the xfoil results. It's important to go through the process of normalizing the design. This will give you the scalars used for the processed dataset. See tutorial (Normalization section). 
+
+> Important note: Training can give you really low values for error and loss but all of that doesn't mean much until you do a santity check with a random design. You may find low error but a mistake in your normalization/unnormalization code that gives you strange results. Always do a santiy check and plot what it is you are interested in. 
+
+**Processed and normalized dataset**:  https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/dataset-processed.zip
+
+> Note: This file may not give you the normalization scalars. It doesn't take long to run through the normalization process. The only parts that take a long time is Step4_CreateDataset.py (This is used to create the **Processed and normalized dataset**) AND training of the graph neural network. 
+
+## Google Colab Tutorial
+[Link to tutorial]()
 
 ## Reporting Bugs 
 To report bugs, add a github issue. Instructions for adding github issues: https://www.youtube.com/watch?v=TKJ4RdhyB5Y
 
-# Repository Walk through
+## Repository Walk through
 Below are links to two interactive walk throughs detailing how to reproduce the results of this work. 
 1. Generating Airfoil Designs [Generate Xfoil](https://github.com/nasa/airfoil-learning/tree/main/generate_xfoil)
 2. Training Graph Netwworks and MultiLayer Perception (MLP) [pytorch](https://github.com/nasa/airfoil-learning/tree/main/pytorch)
 
-# Technical Reports
+## Technical Reports
 A link to the publication will be included here once it's been published. 
+
+## Tutorial
 
 # License
 [NASA Open Source Agreement](https://opensource.org/licenses/NASA-1.3)
