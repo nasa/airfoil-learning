@@ -20,10 +20,6 @@ Useful documentation on torch data object
 * [In-Memory Datasets](https://pytorch-geometric.readthedocs.io/en/latest/notes/create_dataset.html#creating-in-memory-datasets)
 * [Datasets](https://pytorch-geometric.readthedocs.io/en/latest/notes/create_dataset.html#creating-larger-datasets)
 
-
-## Wiki links
-[Getting Started with your Environment](https://gitlab.grc.nasa.gov/machine-learning/graph-networks/airfoil-learning/-/wikis/1.0-Getting-Started)
-
 ### Link to Dataset
 **Unprocessed dataset** can be found at https://nasa-public-data.s3.amazonaws.com/plot3d_utilities/airfoil-learning-dataset.zip 
 This dataset is not normalized and contains the geometry of each airfoil and the xfoil results. It's important to go through the process of normalizing the design. This will give you the scalars (scalers.pickle) used with the processed dataset. See tutorial (Normalization section). 
