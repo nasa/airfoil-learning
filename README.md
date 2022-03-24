@@ -53,7 +53,7 @@ For python development, I reccomend the following:
 
 
 ## Reporting Bugs 
-To report bugs, add a github issue. Instructions for adding github issues: https://www.youtube.com/watch?v=TKJ4RdhyB5Y
+To report bugs, add a github issue. Instructions for adding github issues: [How to submit issues](https://www.youtube.com/watch?v=TKJ4RdhyB5Y)
 
 ## Repository Walk through
 Below are links to two interactive walk throughs detailing how to reproduce the results of this work. 
