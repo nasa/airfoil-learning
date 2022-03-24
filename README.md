@@ -30,8 +30,11 @@ This dataset is not normalized and contains the geometry of each airfoil and the
 
 > Note: This file may not give you the normalization scalars. It doesn't take long to run through the normalization process. The only parts that take a long time is Step4_CreateDataset.py (This is used to create the **Processed and normalized dataset**) AND training of the graph neural network. 
 
-## Google Colab Tutorial
-[Link to tutorial]()
+## Tutorial
+This tutorial link covers which codes to run to setup the dataset and proceed with the training. [Tutorial Link](https://colab.research.google.com/github/nasa/airfoil-learning/blob/main/Tutorials/Training_Graph_Neural_Networks.ipynb)
+
+> Important Note: Google Colab may not provide you with enough resources to train or even process the data. It is encouraged to download the code and use the tips and tricks from the tutorial to run the code locally.
+
 
 ### Regarding use of Jupyter Notebooks
 
@@ -63,10 +66,7 @@ Below are links to two interactive walk throughs detailing how to reproduce the 
 ## Technical Reports
 A link to the publication will be included here once it's been published. 
 
-## Tutorial
-This tutorial link covers which codes to run to setup the dataset and proceed with the training. [Tutorial Link](https://colab.research.google.com/github/nasa/airfoil-learning/blob/main/Tutorials/Training_Graph_Neural_Networks.ipynb)
 
-> Important Note: Google Colab may not provide you with enough resources to train or even process the data. It is encouraged to download the code and use the tips and tricks from the tutorial to run the code locally.
 
 # License
 [NASA Open Source Agreement](https://opensource.org/licenses/NASA-1.3)
