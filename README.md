@@ -66,7 +66,5 @@ Below are links to two interactive walk throughs detailing how to reproduce the 
 ## Technical Reports
 A link to the publication will be included here once it's been published. 
 
-
-
 # License
 [NASA Open Source Agreement](https://opensource.org/licenses/NASA-1.3)
