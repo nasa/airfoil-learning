@@ -142,6 +142,7 @@ def plot_airfoil_performance(predicted_results,folder,airfoil_name,Reynolds,Ncri
             if model_type=='dnn':
                 layer_size = model_data['model_info']['Layers'][0]
                 nlayers = len(model_data['model_info']['Layers'])
+                scaler_type = model_data['model_info']['scaler-type']
                 model_name = f'{scaler_type}-MLP-{layer_size}x{nlayers}'
             
                 polars = pd.DataFrame(model_data['predicted_polars'])
